@@ -18,6 +18,28 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* ----------my custom css start here*/
+
+
+.Student{
+  border:2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  margin:10px;
+  
+}
+
+.cssPtag{
+  font-size:30px;
+  color:rgb(99, 244, 109);
+ 
+}
+/* ----------my custom css eend here */
+
+
+
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
