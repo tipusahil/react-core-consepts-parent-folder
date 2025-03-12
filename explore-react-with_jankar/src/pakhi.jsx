@@ -1,7 +1,13 @@
-export default function Pakhis( pakhi ) {
+
+import "./animStyle.css";
+
+export default function Pakhis( {animalOfPak} ) {
+
+    const {name , price}= animalOfPak;
 return (
-    <div>
-        <h1>pakhi name: </h1>
+    <div className="anim_style">
+        <h1>animal name: {name}  & price: {price} </h1>
+
     </div>
 )
 }

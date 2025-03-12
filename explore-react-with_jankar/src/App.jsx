@@ -13,6 +13,11 @@ import Animals from './animal'
 
 function App() {
 
+  const animals =[
+{name:"lion" , price:"10lakh"},
+{name:"cat" , price:"10hajar"},
+{name:"korgus" , price:"1k"},
+  ];
 
 const books = [ 
   {name:"hariye jawa mukto" , price:200},
@@ -44,6 +49,26 @@ const singerss = [
       {/* kuno tag na lika just bracket use korake bola hoi fragment ( (<> </> ) ei mt tag bracket bola hoi fragment) */}
 
       <h1>bismillahir rahmanir rahim.</h1>
+
+
+
+{/* -----------animals component r vitore arekta pakhi component------- */}
+
+
+<Animals animalsAll={animals} ></Animals>
+
+
+{/* -----------animals compo  end--------- */}
+
+
+
+
+
+
+
+
+
+
 
 
 {/* ------BookStore component start here---------- */}
