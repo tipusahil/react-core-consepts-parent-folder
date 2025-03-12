@@ -4,11 +4,26 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import Conditional from './Conditional'
+import Nayok from './Nayok';
+import Gayooks from './gayooks';
+import Roommate from './roommates'
+
 
 function App() {
 
+  const roommates = [
+    {name:"mustafa", age:22,department:"CST"},
+    {name:"istiak", age:21,department:"CST"},
+    {name:"adnan", age:19,department:"CST"},
+  ]
 
+const actorss =["sakib", "baffaraj", "jasim", "siyam" ,"rubel"];
 
+const singerss = [ 
+  { id:2 , name:"arjith sigh" , age:24},
+  { id:3 , name:"darsan ravel" , age:31},
+  { id:1 , name:"pritom" , age:44},
+]
 
   return (
     <>
@@ -16,6 +31,43 @@ function App() {
       {/* kuno tag na lika just bracket use korake bola hoi fragment ( (<> </> ) ei mt tag bracket bola hoi fragment) */}
 
       <h1>bismillahir rahmanir rahim.</h1>
+
+{/* ---------------Roommates componens e multiple obj pass map er maddome */}
+
+<Roommate name="mustafa" age={22} department={"CST"}></Roommate>
+{roommates.map(roommate1 => <Roommate roommate1_OBJ={roommate1} ></Roommate> )}
+
+{/* ---------------Roommates componens end------------- */}
+
+
+
+{/* ---------------Gayooks----compo calling----------- */}
+
+
+{ singerss.map(singer1 => <Gayooks singersOBJ={singer1} ></Gayooks>) }
+{/* <Gayooks> </Gayooks> */}
+
+{/* ---------------Gayooks----compo calling end----------- */}
+
+
+
+
+{/* -------------actors component calling/rendering.. e map loop calano hbe------- */}
+
+<Nayok name="tipu"></Nayok>
+
+{
+  actorss.map(actor =>  <Nayok name={actor}> </Nayok>  )
+} 
+
+{/* ------------------------------------------------ */}
+
+
+
+
+
+
+
       {/* -----------------------Condtional file---------------------- */}
 
       <Conditional task="learn react" 
@@ -25,7 +77,7 @@ function App() {
       <Conditional task="learn react core concepts"
        isDone={false} >
        </Conditional>
-       
+
       <Conditional task="learn jsx" 
       isDone={true} >
       </Conditional>
