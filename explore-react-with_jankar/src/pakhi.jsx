@@ -7,7 +7,8 @@ export default function Pakhis( {animalOfPak} ) {
 return (
     <div className="anim_style">
         <h1>animal name: {name}  & price: {price} </h1>
-
+ 
+ 
     </div>
 )
 }
