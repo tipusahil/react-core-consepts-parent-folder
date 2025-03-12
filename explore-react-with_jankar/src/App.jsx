@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-
+import Conditional from './Conditional'
 
 function App() {
 
@@ -16,6 +16,15 @@ function App() {
       {/* kuno tag na lika just bracket use korake bola hoi fragment ( (<> </> ) ei mt tag bracket bola hoi fragment) */}
 
       <h1>bismillahir rahmanir rahim.</h1>
+{/* -----------------------Condtional file---------------------- */}
+
+<Conditional task="learn react" isDone={true} ></Conditional>
+<Conditional task="learn react core concepts" isDone={false} ></Conditional>
+<Conditional task="learn jsx" isDone={true} ></Conditional>
+
+{/* --------------------------------------------------- */}
+
+
 
 <AllTypePropsPassByCompoCalling eshobpassHoi={"esob object akare child componeent e pass hoi"} object={{object:"objeect pass hoi"}} array={["array ","pass " , " hoi"]}  boolean={"boolean pass hoi"}  string={"string xyz"}   ></AllTypePropsPassByCompoCalling>
 
