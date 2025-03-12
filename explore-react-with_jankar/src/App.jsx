@@ -7,9 +7,20 @@ import Conditional from './Conditional'
 import Nayok from './Nayok';
 import Gayooks from './gayooks';
 import Roommate from './roommates'
+import BookStore from "./BookStore"
+import Animals from './animal'
 
 
 function App() {
+
+
+const books = [ 
+  {name:"hariye jawa mukto" , price:200},
+  {name:"mukto bataser khuje" , price:250},
+  {name:"prosongshito" , price:340},
+]
+
+
 
   const roommates = [
     {name:"mustafa", age:22,department:"CST"},
@@ -25,6 +36,8 @@ const singerss = [
   { id:1 , name:"pritom" , age:44},
 ]
 
+
+
   return (
     <>
 
@@ -32,12 +45,25 @@ const singerss = [
 
       <h1>bismillahir rahmanir rahim.</h1>
 
+
+{/* ------BookStore component start here---------- */}
+
+
+{/* <BookStore></BookStore> */}
+{books.map(book1 => <BookStore book={book1} ></BookStore>)}
+
+{/* ------BookStore component end here---------- */}
+
+
+
 {/* ---------------Roommates componens e multiple obj pass map er maddome */}
 
-<Roommate name="mustafa" age={22} department={"CST"}></Roommate>
-{roommates.map(roommate1 => <Roommate roommate1_OBJ={roommate1} ></Roommate> )}
+{/* <Roommate name="mustafa" age={22} department={"CST"}></Roommate> */}
+{roommates.map(roommate1 => <Roommate roommate1Obj={roommate1} ></Roommate> )}
+{/* evabe array obj jodi map er maddome apss kora hoi thle sei child component ta upore kinba nise sei component ta call kora thakle ei map er maddome jeta pass kora hocce seta kaj korbena.  */}
 
 {/* ---------------Roommates componens end------------- */}
+
 
 
 
