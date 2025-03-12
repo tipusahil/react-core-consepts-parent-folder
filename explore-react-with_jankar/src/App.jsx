@@ -16,27 +16,35 @@ function App() {
       {/* kuno tag na lika just bracket use korake bola hoi fragment ( (<> </> ) ei mt tag bracket bola hoi fragment) */}
 
       <h1>bismillahir rahmanir rahim.</h1>
-{/* -----------------------Condtional file---------------------- */}
+      {/* -----------------------Condtional file---------------------- */}
 
-<Conditional task="learn react" isDone={true} ></Conditional>
-<Conditional task="learn react core concepts" isDone={false} ></Conditional>
-<Conditional task="learn jsx" isDone={true} ></Conditional>
+      <Conditional task="learn react" 
+      isDone={true}  >
+      </Conditional>
 
-{/* --------------------------------------------------- */}
+      <Conditional task="learn react core concepts"
+       isDone={false} >
+       </Conditional>
+       
+      <Conditional task="learn jsx" 
+      isDone={true} >
+      </Conditional>
+
+      {/* --------------------------------------------------- */}
 
 
 
-<AllTypePropsPassByCompoCalling eshobpassHoi={"esob object akare child componeent e pass hoi"} object={{object:"objeect pass hoi"}} array={["array ","pass " , " hoi"]}  boolean={"boolean pass hoi"}  string={"string xyz"}   ></AllTypePropsPassByCompoCalling>
+      <AllTypePropsPassByCompoCalling eshobpassHoi={"esob object akare child componeent e pass hoi"} object={{ object: "objeect pass hoi" }} array={["array ", "pass ", " hoi"]} boolean={"boolean pass hoi"} string={"string xyz"}   ></AllTypePropsPassByCompoCalling>
 
 
-  <DefaultValueSet defaultValueSetKoraJai={"seet kora jai"} jodiPropsPassKoraNaHoi={"yes jai"} ></DefaultValueSet>
+      <DefaultValueSet defaultValueSetKoraJai={"seet kora jai"} jodiPropsPassKoraNaHoi={"yes jai"} ></DefaultValueSet>
 
-<DefaultValueSet></DefaultValueSet>
+      <DefaultValueSet></DefaultValueSet>
 
-{/* ----------------------important componeent niser ta-------------- */}
-<PropsErValueHisebeObjectArrayBooleanStringNumberSobPassKoraJai evabeEiPositionThekeEvabeValuePassKorakeBolaHoi={" parent compontent theke evabe child component call kore opening tag r vitor theke evabe value pass kora k bola hoi (props passing)  "} object11={{obj:"object pass kora jai" , array1:"Array" , string:"string" , number:54,boolean:true, sobPass:"sob pass kora jai."}}         array={["array pass kora jai", "evabe array={[2,3,4,2]} evabe"]}></PropsErValueHisebeObjectArrayBooleanStringNumberSobPassKoraJai>
-{/* ----------------------------------------- */}
-<PropsNaLikhaDestructing grade={"5.00"} subject="english"  ></PropsNaLikhaDestructing>
+      {/* ----------------------important componeent niser ta-------------- */}
+      <PropsErValueHisebeObjectArrayBooleanStringNumberSobPassKoraJai evabeEiPositionThekeEvabeValuePassKorakeBolaHoi={" parent compontent theke evabe child component call kore opening tag r vitor theke evabe value pass kora k bola hoi (props passing)  "} object11={{ obj: "object pass kora jai", array1: "Array", string: "string", number: 54, boolean: true, sobPass: "sob pass kora jai." }} array={["array pass kora jai", "evabe array={[2,3,4,2]} evabe"]}></PropsErValueHisebeObjectArrayBooleanStringNumberSobPassKoraJai>
+      {/* ----------------------------------------- */}
+      <PropsNaLikhaDestructing grade={"5.00"} subject="english"  ></PropsNaLikhaDestructing>
 
       <Studentss name="mohammad" roll="786231" age="22" ></Studentss>
       <Studentss name="mostafa" roll="786232" age="12" ></Studentss>
@@ -67,40 +75,40 @@ function App() {
 
 // --------------------- my components------------------------
 
-const DefaultValueSet = ( {defaultValueSetKoraJai = "jodi kuno component call kora hoi kintu props pass kora na hoi tkn jodi sei componet er peeramitar hisebe default valuee set kora jai.", jodiPropsPassKoraNaHoi = 1 }) =>{
+const DefaultValueSet = ({ defaultValueSetKoraJai = "jodi kuno component call kora hoi kintu props pass kora na hoi tkn jodi sei componet er peeramitar hisebe default valuee set kora jai.", jodiPropsPassKoraNaHoi = 1 }) => {
 
   return (
-<div>
-<h1> d{defaultValueSetKoraJai} d</h1>
-<h1> d{jodiPropsPassKoraNaHoi} d</h1>
-</div>
+    <div>
+      <h1> d{defaultValueSetKoraJai} d</h1>
+      <h1> d{jodiPropsPassKoraNaHoi} d</h1>
+    </div>
 
   )
 }
 
 
-const AllTypePropsPassByCompoCalling =  ( {eshobpassHoi,defaultValue = 10, object,array,boolean, string }  ) =>{
+const AllTypePropsPassByCompoCalling = ({ eshobpassHoi, defaultValue = 10, object, array, boolean, string }) => {
   return (
     <di>
-<h2> parent component theke eshob props passing j akare pass hoi : {eshobpassHoi}  </h2>
-<h2>object pass :  {object.object}  </h2>
-<h2> abr props er maddome kuno object er vlauee na dile setar defualt value o set kora jai:  {defaultValue}  </h2>
-<h2>array pass : {array}  </h2>
-<h2>boolean pass : {boolean}  </h2>
-<h2>string pass : {string}  </h2>
+      <h2> parent component theke eshob props passing j akare pass hoi : {eshobpassHoi}  </h2>
+      <h2>object pass :  {object.object}  </h2>
+      <h2> abr props er maddome kuno object er vlauee na dile setar defualt value o set kora jai:  {defaultValue}  </h2>
+      <h2>array pass : {array}  </h2>
+      <h2>boolean pass : {boolean}  </h2>
+      <h2>string pass : {string}  </h2>
     </di>
   );
 };
 
 
 // -------------- important  component eta-----------------------
-const PropsErValueHisebeObjectArrayBooleanStringNumberSobPassKoraJai =(  {  object11 , array , evabeEiPositionThekeEvabeValuePassKorakeBolaHoi} ) =>{
+const PropsErValueHisebeObjectArrayBooleanStringNumberSobPassKoraJai = ({ object11, array, evabeEiPositionThekeEvabeValuePassKorakeBolaHoi }) => {
 
   return (
     <div>
-<h1> {object11.obj} </h1> <br></br>
-<h1> {array} </h1><br></br>
-<h1> {evabeEiPositionThekeEvabeValuePassKorakeBolaHoi} </h1> 
+      <h1> {object11.obj} </h1> <br></br>
+      <h1> {array} </h1><br></br>
+      <h1> {evabeEiPositionThekeEvabeValuePassKorakeBolaHoi} </h1>
     </div>
   )
 }
@@ -108,13 +116,13 @@ const PropsErValueHisebeObjectArrayBooleanStringNumberSobPassKoraJai =(  {  obje
 
 // -------------------------------------------------------
 // const PropsNaLikhaDestructing =(props) => {
-const PropsNaLikhaDestructing =( {grade , subject}) => {// props na lika destururing eki line e.
+const PropsNaLikhaDestructing = ({ grade, subject }) => {// props na lika destururing eki line e.
 
   return (
-  <div>
+    <div>
       <h2>grade holo: {grade}  </h2>
       <h2>subject holo: {subject} </h2>
-  </div>
+    </div>
   )
 
 }
@@ -125,7 +133,7 @@ const Studentss = (props) => {
   return (
     <div>
       <h2>student name: name {props.name}  &
-          roll holo: {props.roll} 
+        roll holo: {props.roll}
         tarpor age holo: {props.age}
       </h2>
     </div>
