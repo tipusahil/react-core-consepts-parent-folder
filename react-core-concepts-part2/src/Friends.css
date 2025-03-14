@@ -1,0 +1,11 @@
+.fri_style{
+    border:2px solid  tomato;
+    border-radius: 20px;
+    padding:10px;
+}
+.fri_style_2{
+    border:2px solid  greenyellow;
+    border-radius: 20px;
+    padding:10px;
+    margin:10px;
+}
