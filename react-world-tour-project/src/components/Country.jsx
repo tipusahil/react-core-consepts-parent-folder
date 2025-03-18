@@ -61,7 +61,7 @@ export default function Country({ country , markVisitedBtn_handler , Hanlde_visi
             <h2>Capital: {capital} </h2>
             {/* <h2>flag: <img src={flags.svg} alt="" />  </h2> */}
             <h2>Population: {population} </h2>
-            <h2>aArea: {area} </h2>
+            <h2>Area: {area} </h2>
             <h2>Flag: <img src={flags?.png} alt="" />  </h2>
             <h2>code/key: {cca3} </h2>
 

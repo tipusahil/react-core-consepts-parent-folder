@@ -14,9 +14,10 @@ function App() {
 {/* ----------------------component calling here in jsx------ */}
 
 
-      <h1>React World Countries Travels </h1>
-      <h3>countries calling: 
-      <Countries></Countries> </h3>
+      <h1>React Awesome World travel project </h1>
+      <h3>
+      <Countries></Countries> 
+      </h3>
 
 
 
