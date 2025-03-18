@@ -1,0 +1,32 @@
+.compo_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border:3px solid red;
+    gap:10px;
+
+}
+
+
+
+/* responsive for tab or medium devices */
+@media screen and (max-width:800px) and (min-width:500px) {
+    .compo_container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* responsive for mobile devices */
+@media screen and (max-width:500px) and (min-width:300px) {
+    
+    .compo_container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.visitedCountries_countries{
+border:2px solid green;
+}
+.visitedCountries_countries img{
+    width: 100px;
+}

@@ -1,11 +1,22 @@
+
+
 .compo{
     border:2px solid purple;
     margin:10px;
     padding:10px;
      border-radius: 20px;
+
      /* text-align: start; */
 }
 
 .compo:hover{
     filter:drop-shadow( 0 10px 50px white);
 }
+
+.visited{
+    background-color: rgb(246, 208, 250);
+    color:navy;
+}
+
+
+
