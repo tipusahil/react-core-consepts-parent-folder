@@ -24,4 +24,4 @@ const SetNewItemToCartToLS = newItem => {
 }
 
 // SetNewItemToCartToLS()
-export { SetNewItemToCartToLS };
+export { SetNewItemToCartToLS , getCartFromLS};

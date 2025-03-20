@@ -3,19 +3,19 @@ import './bottle.css';
 
 // const Bottle = ( bottle ) => {    /// jodi eta ase (...bottle) 
 
-// const Bottle = ( {bottle , handlerParchaseBtAddToCard}) => {  
+// const Bottle = ( {bottle , handlerParchaseBtAddToCart}) => {  
 
 //  ar jodi (bottles)theke egulo pass hoi
 // bottle={bottle}
-// handlerParchaseBtAddToCard={handlerParchaseBtAddToCard}
+// handlerParchaseBtAddToCart={handlerParchaseBtAddToCart}
 
 
 const Bottle = (props) => {
-const {bottle , handlerParchaseBtAddToCard} = props;
+const {bottle , handlerParchaseBtAddToCart} = props;
     // const {id,name,im} = props.bottle;
     const { id, name, image , price } = bottle;
 
-// console.log(handlerParchaseBtAddToCard)
+// console.log(handlerParchaseBtAddToCart)
 
     return (
         <div className="Style_bottle">
@@ -27,7 +27,7 @@ const {bottle , handlerParchaseBtAddToCard} = props;
             <h3> price: {price}$ </h3>
             <button onClick={() => {
                     try{
-                        handlerParchaseBtAddToCard(bottle)
+                        handlerParchaseBtAddToCart(bottle)
                     }
                     catch(error){
                         console.log(`error ta holo = ${error}`)
