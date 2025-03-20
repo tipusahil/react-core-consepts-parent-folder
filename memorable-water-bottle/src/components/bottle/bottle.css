@@ -1,0 +1,17 @@
+.Style_bottle{
+border:2px solid purple;
+padding: 10px ;
+margin: 10px;
+border-radius: 20px;
+
+}
+
+.Style_bottle img{
+    width: 100%;
+}
+
+.Style_bottle:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    filter:drop-shadow(0 0 5px white);
+}

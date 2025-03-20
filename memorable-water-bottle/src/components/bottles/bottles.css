@@ -1,0 +1,7 @@
+.bottles_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    /* grid-template-columns:1fr 1fr 1fr; */
+    border:2px solid red;
+}
