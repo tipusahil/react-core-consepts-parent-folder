@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import './bottles.css';
 import Bottle from '../Bottle/Bottle';
-import { SetNewItemToCartToLS, getCartFromLS } from '../../utilities_by_jank/localStorage2';
+import { SetNewItemToCartToLS, getCartFromLS, removeCartFromLS } from '../../utilities_by_jank/localStorage2';
 import Cart from '../cart/Cart';
 
 const Bottles = () => {
@@ -35,6 +35,18 @@ const Bottles = () => {
 
     // ---------------------bottle parchase event handler end here------------------
 
+    // ---------remove cart from LS & visual cart start heere----------------
+    const handler_removeCartFromLS = id => {
+        // visual cart remove korte hbe
+        const remainingCart = cart.filter(bottle => bottle.id !== id);
+        setCart(remainingCart)
+
+        // & LS theke cart ta remove korte hobe
+        removeCartFromLS(id);
+    }
+
+    // ---------remove cart from LS & visual cart end heere----------------
+
 
     // --------------laod cart from localStorage by useEffect , START HERE----------
     useEffect(() => {
@@ -56,17 +68,19 @@ const Bottles = () => {
         };
 
         console.log(savedCartOrIdForShowingToUI);
-setCart(savedCartOrIdForShowingToUI)
+        setCart(savedCartOrIdForShowingToUI)
 
-    },[bottles_st]);
+    }, [bottles_st]);
     // --------------laod cart from localStorage by useEffect , START HERE----------
 
 
     return (
         <div>
             <h2>bottle ase holo: {bottles_st.length} </h2>
-            <h3>bottle added to cart: <Cart cart={cart}></Cart> </h3>
-          
+            <h3>bottle added to cart: <Cart cart={cart}
+            handler_removeCartFromLS={handler_removeCartFromLS}  
+            ></Cart> </h3>
+
 
 
 
@@ -82,7 +96,7 @@ setCart(savedCartOrIdForShowingToUI)
                 }
             </div>
 
-            
+
 
 
         </div>

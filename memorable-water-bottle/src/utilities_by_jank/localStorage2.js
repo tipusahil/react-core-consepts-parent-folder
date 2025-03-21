@@ -24,4 +24,21 @@ const SetNewItemToCartToLS = newItem => {
 }
 
 // SetNewItemToCartToLS()
-export { SetNewItemToCartToLS , getCartFromLS};
+
+
+const removeCartFromLS = id => {
+    // visual cart remove korte hbe
+    // & LS theke cart ta remove korte hobe.
+
+    const cart = getCartFromLS();
+    const remainingCart = cart.filter(idx => idx !== id);
+
+    saveNewCartToLS(remainingCart);
+}
+
+
+
+
+
+
+export { SetNewItemToCartToLS , getCartFromLS ,removeCartFromLS };

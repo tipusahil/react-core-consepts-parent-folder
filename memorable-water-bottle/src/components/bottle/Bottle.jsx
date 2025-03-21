@@ -1,5 +1,5 @@
 import './bottle.css';
-
+import PropTypes from "prop-types";
 
 // const Bottle = ( bottle ) => {    /// jodi eta ase (...bottle) 
 
@@ -36,5 +36,10 @@ const {bottle , handlerParchaseBtAddToCart} = props;
         </div>
     );
 };
+
+Bottle.propTypes = {
+    bottle: PropTypes.object.isRequired,
+    handlerParchaseBtAddToCart: PropTypes.func.isRequired,
+}
 
 export default Bottle;
