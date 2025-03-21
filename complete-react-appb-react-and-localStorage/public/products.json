@@ -1,0 +1,73 @@
+[
+    {
+        "id": 10009,
+        "sonkar": "T-Shirt",
+        "name": "Vintage Red Tee",
+        "price": 700,
+        "img": "https://i.pinimg.com/736x/4c/6e/a8/4c6ea85bec9a25c43b159af08d4361cb.jpg"
+    },
+    {
+        "id": 10007,
+        "sonkar": "T-Shirt",
+        "name": "Oversized Black Tee",
+        "price": 800,
+        "img": "https://i.pinimg.com/736x/55/db/7c/55db7cebe75488cbd14cf10f18f7753d.jpg"
+    },
+    {
+        "id": 10006,
+        "sonkar": "Pant",
+        "name": "Regular Fit Denim",
+        "price": 1300,
+        "img": "https://i.pinimg.com/736x/bc/c6/aa/bcc6aa4e8d38861bd16b319a6e68aef0.jpg"
+    },
+    {
+        "id": 10005,
+        "sonkar": "T-Shirt",
+        "name": "Striped Blue Tee",
+        "price": 650,
+        "img": "https://i.pinimg.com/736x/8e/81/57/8e8157a536b497248c21e58911015e74.jpg"
+    },
+    {
+        "id": 10002,
+        "sonkar": "Pant",
+        "name": "Slim Fit Black Jeans",
+        "price": 1200,
+        "img": "https://i.pinimg.com/736x/08/3c/b6/083cb6fa57968721f64991ef62b73d16.jpg"
+    },
+    {
+        "id": 10008,
+        "sonkar": "Pant",
+        "name": "Cargo Olive Pants",
+        "price": 1600,
+        "img": "https://i.pinimg.com/736x/1c/52/4f/1c524fd4155b5216abc93ecc0ad1fd20.jpg"
+    },
+    {
+        "id": 10003,
+        "sonkar": "T-Shirt",
+        "name": "Graphic Navy Tee",
+        "price": 750,
+        "img": "https://i.pinimg.com/736x/72/16/9f/72169f0de641503a1d8a2218d0cb6f9f.jpg"
+    },
+    {
+        "id": 10004,
+        "sonkar": "Pant",
+        "name": "Chino Khaki Pants",
+        "price": 1400,
+        "img": "https://i.pinimg.com/736x/81/a3/69/81a36990daf89ebfb88ba9ff8f9d85f6.jpg"
+    },
+    {
+        "id": 10001,
+        "sonkar": "T-Shirt",
+        "name": "Classic White Tee",
+        "price": 550,
+        "img": "https://i.pinimg.com/736x/e7/85/0e/e7850e9742ae012df53f28357b42e28b.jpg"
+    },
+
+    {
+        "id": 10010,
+        "sonkar": "Pant",
+        "name": "Tapered Grey Trousers",
+        "price": 1500,
+        "img": "https://i.pinimg.com/736x/08/3c/b6/083cb6fa57968721f64991ef62b73d16.jpg"
+    }
+]
