@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import './bottles.css';
 import Bottle from '../Bottle/Bottle';
 import { SetNewItemToCartToLS, getCartFromLS } from '../../utilities_by_jank/localStorage2';
+import Cart from '../cart/Cart';
 
 const Bottles = () => {
 
@@ -55,17 +56,17 @@ const Bottles = () => {
         };
 
         console.log(savedCartOrIdForShowingToUI);
+setCart(savedCartOrIdForShowingToUI)
 
-
-    },[cart]);
+    },[bottles_st]);
     // --------------laod cart from localStorage by useEffect , START HERE----------
 
 
     return (
         <div>
             <h2>bottle ase holo: {bottles_st.length} </h2>
-            <h3>bottle added to cart: {cart.length}</h3>
-            {/* <h3>last added bottle name: {(cart.length - 1).name} </h3> */}
+            <h3>bottle added to cart: <Cart cart={cart}></Cart> </h3>
+          
 
 
 
@@ -80,6 +81,9 @@ const Bottles = () => {
                     // key={bottle.id} bottle={bottle}
                 }
             </div>
+
+            
+
 
         </div>
     );

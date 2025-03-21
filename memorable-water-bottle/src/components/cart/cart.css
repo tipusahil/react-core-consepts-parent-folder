@@ -1,0 +1,7 @@
+.cart_container{
+border:2px solid red;
+}
+
+.cart_container img{
+    width: 100px;
+}
