@@ -5,16 +5,19 @@ const Product = ({ product }) => {
 
     const { id, sonkar, name, price, img } = product;
 
-    console.log(product);
+    // console.log(product);
 
     return (
         <div className="compo1">
             <h3>ID: {id}</h3>
-            <h3>type: {sonkar}</h3>
-            <h3>this product name:{name}</h3>
+            <h3>Type: {sonkar}</h3>
+            <h3>Product name:{name}</h3>
             <img src={img} alt="" />
-            <h3>this product price:{price}</h3>
-            <button className="parchaseBtn">Parchase</button>
+            <h3>Price: {price}tk</h3>
+<div className="compo_btn_container">
+<button className="addtoCartBtn">Add To Cart</button>
+<button className="parchaseBtn">Parchase</button>
+</div>
         </div>
     );
 };

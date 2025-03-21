@@ -3,6 +3,7 @@ import './App.css'
 
 // import Products './assets/components/products';
 import Products from './assets/components/products/Products';
+import { getCartFromLS } from './assets/components/utilities/localStorage';
 
 function App() {
 
@@ -27,7 +28,9 @@ function App() {
         </div>
 
         <div className="cart_container">
-          <div className="title">this is cart container</div>
+          <div className="title"> <h4>this is cart container</h4>
+            {getCartFromLS}
+          </div>
         </div>
       </div>
 
