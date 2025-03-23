@@ -9,6 +9,7 @@ const getCartFromLS = () => {
 }
 
 
+
 const saveNewCartToLS = (cartData) => {
     const cartStringified = JSON.stringify(cartData);
 

@@ -8,15 +8,11 @@
 .parent {
   border: 2px solid red;
   display: flex;
-  padding: 20px;
+padding: 20px;
   justify-content: space-between;
 }
 
-.compo_container {
-  border: 2px solid purple;
-  width: 65%;
 
-}
 
 .title {
   font-size: 25px;
@@ -25,9 +21,12 @@
 .cart_container {
   border: 2px solid green;
   width: 30%;
+  
 }
 
-.compo_containe2 {
+.compo_container {
+  border: 2px solid purple;
+  width: 65%;
   display: grid;
   grid-template-columns: repeat(3, 1fr );
   gap:10px;
@@ -70,6 +69,12 @@ align-items: center;
 }
 .compo_btn_container button{
   font-size: 15px;
+}
+
+.cart_info{
+  display: flex;
+  justify-content: space-around;
+  border:2px solid red;
 }
 
 /* 

@@ -1,7 +1,7 @@
 
 
 
-const Product = ({ product }) => {
+const Product = ({ product ,hanlder_addToCart }) => {
 
     const { id, sonkar, name, price, img } = product;
 
@@ -15,7 +15,7 @@ const Product = ({ product }) => {
             <img src={img} alt="" />
             <h3>Price: {price}tk</h3>
 <div className="compo_btn_container">
-<button className="addtoCartBtn">Add To Cart</button>
+<button onClick={ () => hanlder_addToCart(product)} className="addtoCartBtn">Add To Cart</button>
 <button className="parchaseBtn">Parchase</button>
 </div>
         </div>
